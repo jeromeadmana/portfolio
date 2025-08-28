@@ -56,10 +56,10 @@ function App() {
         <h1 className="name">Jerome Admana</h1>
         <p className="title">Fullstack Developer</p>
         <div className="social-icons">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jeromeadmana/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={40} />
           </a>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/jeromeadmana" target="_blank" rel="noopener noreferrer">
             <FaGithub size={40} />
           </a>
         </div>
