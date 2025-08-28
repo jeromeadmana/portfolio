@@ -133,16 +133,23 @@ function App() {
       <section ref={(el) => { sectionsRef.current[2] = el; }} className="tech-stack">
         <h2 className="section-title">Tech Stack</h2>
         <div className="grid">
+          {/* Frontend */}
+          <div className="tech"><SiJavascript size={50} /><p>JavaScript</p></div>
+          <div className="tech"><FaReact size={50} /><p>React</p></div>
+
+          {/* Backend */}
           <div className="tech"><SiDotnet size={50} /><p>.NET Core</p></div>
           <div className="tech"><SiSharp size={50} /><p>C#</p></div>
           <div className="tech"><FaNodeJs size={50} /><p>Node.js</p></div>
-          <div className="tech"><FaReact size={50} /><p>React</p></div>
+          <div className="tech"><FaPython size={50} /><p>Python</p></div>
+          <div className="tech"><SiPhp size={50} /><p>PHP</p></div>
+
+          {/* Database */}
           <div className="tech"><SiPostgresql size={50} /><p>Postgres</p></div>
           <div className="tech"><FaDatabase size={50} /><p>MSSQL</p></div>
+
+          {/* Cloud / Other */}
           <div className="tech"><FaFire size={50} /><p>Firebase</p></div>
-          <div className="tech"><FaPython size={50} /><p>Python</p></div>
-          <div className="tech"><SiJavascript size={50} /><p>JavaScript</p></div>
-          <div className="tech"><SiPhp size={50} /><p>PHP</p></div>
         </div>
       </section>
 
