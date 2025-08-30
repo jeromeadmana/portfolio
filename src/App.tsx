@@ -3,7 +3,7 @@ import "./App.css";
 import { 
   FaArrowDown, FaArrowUp, FaReact, FaNodeJs, FaFire, FaDatabase, FaPython, FaGithub, FaLinkedin 
 } from "react-icons/fa";
-import { SiDotnet, SiSharp, SiPostgresql, SiJavascript, SiPhp } from "react-icons/si";
+import { SiDotnet, SiSharp, SiPostgresql, SiJavascript, SiPhp, SiNodedotjs } from "react-icons/si";
 
 function App() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -68,6 +68,17 @@ function App() {
       <section ref={(el) => { sectionsRef.current[1] = el; }} className="projects-section">
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
+
+          <a href="https://ai-notes-drab-gamma.vercel.app" target="_blank" rel="noopener noreferrer" className="project-box">
+            <iframe src="https://ai-notes-drab-gamma.vercel.app" title="Office" className="project-preview" />
+            <h3>AI Notes</h3>
+            <div className="tech-icons">
+              <SiNodedotjs size={30} />
+              <FaReact size={30} />
+              <SiPostgresql size={30} />
+            </div>
+          </a>
+          
           <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className="project-box">
             <iframe src="https://www.example.com" title="Google" className="project-preview" />
             <h3>Example</h3>
@@ -81,16 +92,6 @@ function App() {
           <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" className="project-box">
             <iframe src="https://www.wikipedia.org" title="Yahoo" className="project-preview" />
             <h3>Wikipedia</h3>
-            <div className="tech-icons">
-              <SiDotnet size={30} />
-              <FaReact size={30} />
-              <SiPostgresql size={30} />
-            </div>
-          </a>
-
-          <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://www.w3schools.com" title="Office" className="project-preview" />
-            <h3>W3 Schools</h3>
             <div className="tech-icons">
               <SiDotnet size={30} />
               <FaReact size={30} />
