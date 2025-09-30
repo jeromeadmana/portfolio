@@ -4,6 +4,8 @@ import {
   FaArrowDown, FaArrowUp, FaReact, FaNodeJs, FaFire, FaDatabase, FaPython, FaGithub, FaLinkedin 
 } from "react-icons/fa";
 import { SiDotnet, SiSharp, SiPostgresql, SiJavascript, SiPhp, SiNodedotjs } from "react-icons/si";
+import aiNotesImg from "./assets/Ai-Notes.png";
+import aiImageImg from "./assets/Ai-Image.png";
 
 function App() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -69,28 +71,62 @@ function App() {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
 
-          <a href="https://ai-notes-drab-gamma.vercel.app" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://ai-notes-drab-gamma.vercel.app" title="Office" className="project-preview" />
-            <h3>AI Notes</h3>
+          {/* ✅ Project 1 - AI Notes */}
+          <div className="project-box">
+            <a href="https://ai-notes-drab-gamma.vercel.app" target="_blank" rel="noopener noreferrer">
+              <img 
+                src={aiNotesImg}
+                alt="AI Notes Preview" 
+                className="project-preview" 
+              />
+              <h3>AI Notes</h3>
+            </a>
             <div className="tech-icons">
               <SiNodedotjs size={30} />
               <FaReact size={30} />
               <SiPostgresql size={30} />
             </div>
-          </a>
-          
-          <a href="https://www.example.com" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://www.example.com" title="Google" className="project-preview" />
-            <h3>Example</h3>
-            <div className="tech-icons">
-              <FaNodeJs size={30} />
-              <FaReact size={30} />
-              <SiPostgresql size={30} />
-            </div>
-          </a>
+            <a 
+              href="https://github.com/jeromeadmana/ai-notes" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="github-link"
+            >
+              <FaGithub size={25} /> AI Notes GitHub Repo
+            </a>
+          </div>
 
+          {/* ✅ Project 2 - React + Tailwind + Node + Postgres */}
+          <div className="project-box">
+            <a href="https://your-second-project-link.com" target="_blank" rel="noopener noreferrer">
+              <img 
+                src={aiImageImg}
+                alt="My Project Preview" 
+                className="project-preview" 
+              />
+              <h3>My Project</h3>
+            </a>
+            <div className="tech-icons">
+              <FaReact size={30} />
+              <SiJavascript size={30} /> 
+              <SiPostgresql size={30} />
+              <FaNodeJs size={30} />
+            </div>
+            <a 
+              href="https://github.com/jeromeadmana/my-project" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="github-link"
+            >
+              <FaGithub size={25} /> AI Image GitHub Repo
+            </a>
+          </div>
+
+
+          {/* ❌ Commented-out projects (retain for future use) */}
+          {/*
           <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://www.wikipedia.org" title="Yahoo" className="project-preview" />
+            <iframe src="https://www.wikipedia.org" title="Wikipedia" className="project-preview" />
             <h3>Wikipedia</h3>
             <div className="tech-icons">
               <SiDotnet size={30} />
@@ -100,7 +136,7 @@ function App() {
           </a>
 
           <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://developer.mozilla.org" title="Google Copy" className="project-preview" />
+            <iframe src="https://developer.mozilla.org" title="Mozilla Developer" className="project-preview" />
             <h3>Mozilla Developer</h3>
             <div className="tech-icons">
               <FaNodeJs size={30} />
@@ -110,8 +146,8 @@ function App() {
           </a>
 
           <a href="https://codesandbox.io" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://codesandbox.io" title="Yahoo Copy" className="project-preview" />
-            <h3>Code Sanbox</h3>
+            <iframe src="https://codesandbox.io" title="Code Sandbox" className="project-preview" />
+            <h3>Code Sandbox</h3>
             <div className="tech-icons">
               <SiDotnet size={30} />
               <FaReact size={30} />
@@ -120,7 +156,7 @@ function App() {
           </a>
 
           <a href="https://vercel.com/templates" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://vercel.com/templates" title="Office Copy" className="project-preview" />
+            <iframe src="https://vercel.com/templates" title="Vercel" className="project-preview" />
             <h3>Vercel</h3>
             <div className="tech-icons">
               <SiDotnet size={30} />
@@ -128,8 +164,10 @@ function App() {
               <SiPostgresql size={30} />
             </div>
           </a>
+          */}
         </div>
       </section>
+
 
       <section ref={(el) => { sectionsRef.current[2] = el; }} className="tech-stack">
         <h2 className="section-title">Tech Stack</h2>
