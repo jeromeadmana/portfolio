@@ -122,6 +122,20 @@ function App() {
             </a>
           </div>
 
+          <div className="project-box">
+            <a href="https://github.com/jeromeadmana" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                alt="GitHub Logo" 
+                className="project-preview" 
+              />
+              <h3>My GitHub Repositories</h3>
+            </a>
+            <div className="tech-icons">
+              <FaGithub size={40} />
+            </div>
+          </div>
+
 
           {/* ❌ Commented-out projects (retain for future use) */}
           {/*
