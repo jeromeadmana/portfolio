@@ -98,6 +98,32 @@ function App() {
 
           {/* ✅ Project 2 - React + Tailwind + Node + Postgres */}
           <div className="project-box">
+            <a href="https://task-demo-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <img 
+                src={aiImageImg}
+                alt="Public Task Tracker" 
+                className="project-preview" 
+              />
+              <h3>AI Image Gallery</h3>
+            </a>
+            <div className="tech-icons">
+              <FaReact size={30} />
+              <SiJavascript size={30} /> 
+              <SiPostgresql size={30} />
+              <FaNodeJs size={30} />
+            </div>
+            <a 
+              href="https://github.com/jeromeadmana/ai-image-gallery" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="github-link"
+            >
+              <FaGithub size={25} /> AI Image GitHub Repo
+            </a>
+          </div>
+
+          {/* ✅ Project 3 - Next + Tailwind + Postgres */}
+          <div className="project-box">
             <a href="https://your-second-project-link.com" target="_blank" rel="noopener noreferrer">
               <img 
                 src={aiImageImg}
@@ -113,7 +139,7 @@ function App() {
               <FaNodeJs size={30} />
             </div>
             <a 
-              href="https://github.com/jeromeadmana/my-project" 
+              href="https://github.com/jeromeadmana/task-demo" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="github-link"
@@ -135,6 +161,7 @@ function App() {
               <FaGithub size={40} />
             </div>
           </div>
+          
 
 
           {/* ❌ Commented-out projects (retain for future use) */}
