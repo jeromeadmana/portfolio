@@ -72,7 +72,6 @@ function App() {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
 
-          {/* ✅ Project 1 - AI Notes */}
           <div className="project-box">
             <a href="https://ai-notes-drab-gamma.vercel.app" target="_blank" rel="noopener noreferrer">
               <img 
@@ -97,7 +96,6 @@ function App() {
             </a>
           </div>
 
-          {/* ✅ Project 2 - React + Tailwind + Node + Postgres */}
           <div className="project-box">
             <a href="https://aiimagegallery.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img 
@@ -123,7 +121,6 @@ function App() {
             </a>
           </div>
 
-          {/* ✅ Project 3 - Next + Tailwind + Postgres */}
           <div className="project-box">
             <a href="https://task-demo-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img 
@@ -144,7 +141,7 @@ function App() {
               rel="noopener noreferrer" 
               className="github-link"
             >
-              <FaGithub size={25} /> AI Image GitHub Repo
+              <FaGithub size={25} /> Task Tracker GitHub Repo
             </a>
           </div>
 
@@ -161,51 +158,7 @@ function App() {
               <FaGithub size={40} />
             </div>
           </div>
-          
 
-
-          {/* ❌ Commented-out projects (retain for future use) */}
-          {/*
-          <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://www.wikipedia.org" title="Wikipedia" className="project-preview" />
-            <h3>Wikipedia</h3>
-            <div className="tech-icons">
-              <SiDotnet size={30} />
-              <FaReact size={30} />
-              <SiPostgresql size={30} />
-            </div>
-          </a>
-
-          <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://developer.mozilla.org" title="Mozilla Developer" className="project-preview" />
-            <h3>Mozilla Developer</h3>
-            <div className="tech-icons">
-              <FaNodeJs size={30} />
-              <FaReact size={30} />
-              <SiPostgresql size={30} />
-            </div>
-          </a>
-
-          <a href="https://codesandbox.io" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://codesandbox.io" title="Code Sandbox" className="project-preview" />
-            <h3>Code Sandbox</h3>
-            <div className="tech-icons">
-              <SiDotnet size={30} />
-              <FaReact size={30} />
-              <SiPostgresql size={30} />
-            </div>
-          </a>
-
-          <a href="https://vercel.com/templates" target="_blank" rel="noopener noreferrer" className="project-box">
-            <iframe src="https://vercel.com/templates" title="Vercel" className="project-preview" />
-            <h3>Vercel</h3>
-            <div className="tech-icons">
-              <SiDotnet size={30} />
-              <FaReact size={30} />
-              <SiPostgresql size={30} />
-            </div>
-          </a>
-          */}
         </div>
       </section>
 
