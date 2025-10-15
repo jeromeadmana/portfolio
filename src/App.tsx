@@ -102,7 +102,7 @@ function App() {
             <a href="https://aiimagegallery.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img 
                 src={aiImageImg}
-                alt="AI Image Gallery" 
+                alt="AI Image Gallery Preview" 
                 className="project-preview" 
               />
               <h3>AI Image Gallery</h3>
@@ -128,7 +128,7 @@ function App() {
             <a href="https://task-demo-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img 
                 src={taskTrackerImg}
-                alt="My Project Preview" 
+                alt="Task Demo Preview" 
                 className="project-preview" 
               />
               <h3>Task Tracker Demo</h3>
