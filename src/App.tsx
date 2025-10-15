@@ -6,6 +6,7 @@ import {
 import { SiDotnet, SiSharp, SiPostgresql, SiJavascript, SiPhp, SiNodedotjs } from "react-icons/si";
 import aiNotesImg from "./assets/Ai-Notes.png";
 import aiImageImg from "./assets/Ai-Image.png";
+import taskTrackerImg from "./assets/Task-Tracker.png";
 
 function App() {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
@@ -98,10 +99,10 @@ function App() {
 
           {/* ✅ Project 2 - React + Tailwind + Node + Postgres */}
           <div className="project-box">
-            <a href="https://task-demo-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://aiimagegallery.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img 
                 src={aiImageImg}
-                alt="Public Task Tracker" 
+                alt="AI Image Gallery" 
                 className="project-preview" 
               />
               <h3>AI Image Gallery</h3>
@@ -124,19 +125,18 @@ function App() {
 
           {/* ✅ Project 3 - Next + Tailwind + Postgres */}
           <div className="project-box">
-            <a href="https://your-second-project-link.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://task-demo-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img 
-                src={aiImageImg}
+                src={taskTrackerImg}
                 alt="My Project Preview" 
                 className="project-preview" 
               />
-              <h3>My Project</h3>
+              <h3>Task Tracker Demo</h3>
             </a>
             <div className="tech-icons">
               <FaReact size={30} />
               <SiJavascript size={30} /> 
               <SiPostgresql size={30} />
-              <FaNodeJs size={30} />
             </div>
             <a 
               href="https://github.com/jeromeadmana/task-demo" 
